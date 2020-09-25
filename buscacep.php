@@ -7,10 +7,10 @@
     * Author URI: https://www.joguinhoseletronicos.com.br
  */
 
-function(busca_cep){
-    return '<h3>teste cep</h3>'
+function busca_cep(){
+    echo file_get_contents(plugins_url().'/buscacep/formBusca.php');
 }
 
-add_shortcode('buscacep', 'busca_cep');
+add_shortcode('buscaCep', 'busca_cep');
 
  ?>
